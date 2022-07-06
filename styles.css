@@ -1,9 +1,11 @@
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
+/* header section */
 header {
     background-color: #1F2937;
     width: 100%;
@@ -16,16 +18,16 @@ header {
     display: block;
     text-align: left;
     height: 60vh;
-    margin-top: 90px;
-    margin-left: 150px;
+    margin-top: 100px;
+    margin-left: 160px;
 }
 
 .hero-img {
     width: 35%;
     height: 40vh;
     position: absolute;
-    bottom: 25%;
-    right: 14%;   
+    bottom: 23%;
+    right: 12%;   
 }
 
 .hero-text {
@@ -41,7 +43,7 @@ header {
     margin-top: 5px;
 }
 
-button {
+.hero-btn {
     background-color:#3882F6 ;
     border: none;
     border-radius: 10px;
@@ -49,8 +51,10 @@ button {
     padding: 10px 30px 10px 30px;
     color:#F9FAF8;
     font-weight: bold;
+    margin-top: 15px;
 }
 
+ /* nav-bar */
 .nav-bar {
     display: flex;
     justify-content: space-around;
@@ -72,11 +76,100 @@ button {
   font-size: 20px;
 }
 
+.nav-links a:hover {
+    border-bottom: 1px solid #E5E7EB;
+  }
+
 .logo {
     color: #F9FAF8;
     letter-spacing: 5px;
 }
 
+/* image section */
+.section-title{
+  font-size: 35px;
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 10px;
+}
 
+.img-container {
+    display: flex;
+    flex-direction: row;
+    margin: 25px;
+    width: 100%;
+    flex: 0 0 0;
+    justify-content: center;
+    
+}
 
+figcaption {
+    text-align: center;
+}
+
+.img {
+    width: 190px;
+    height: 30vh;
+    border-radius: 10px;
+    border: 1px solid #3882F6;
+    margin: 0 30px;
+    
+}
+
+/* quote */
+
+.quote {
+    background-color: #E5E7EB;
+    color: #1F2937;
+    font-size: 36px;
+    width: 100%;
+    padding: 120px 0px;
+    text-align: center;
+}
+
+.quote-a {
+    text-align: right;
+    margin-right: 300px;
+    font-weight: bold;
+}
+
+/* call to action  */
+
+.call-to-action {
+    padding: 80px 150px;
+}
+
+.cta-container {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 10px;
+    padding: 50px;
+    position: relative;
+}
+
+.cta-text h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.cta-btn {
+  padding: 5px 30px;
+  color:#F9FAF8;
+  background-color: transparent;
+  border: 2px solid #F9FAF8;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  top: 50px;
+  right: 80px;
+}
+
+/* footer */
+footer {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    padding: 25px;
+    text-align: center;
+}
 
